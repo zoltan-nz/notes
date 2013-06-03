@@ -1,0 +1,8 @@
+default was:
+Constant Deceleration (273): 1.0
+Adaptive Deceleration (274): 1.0
+Velocity Scaling (275): 10.0
+
+xinput
+xinput list-props 10
+xinput set-prop 10 273 2
