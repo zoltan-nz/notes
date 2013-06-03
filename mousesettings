@@ -6,3 +6,7 @@ Velocity Scaling (275): 10.0
 xinput
 xinput list-props 10
 xinput set-prop 10 273 2
+
+273: 2 (speed)
+274: 20 (slow down) 
+275: 20 (multiplier)
