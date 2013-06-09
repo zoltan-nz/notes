@@ -8,6 +8,7 @@ development:
   password: 
   host: localhost
   timeout: 20
+  
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -31,3 +32,6 @@ production:
   username: 
   password: 
   host: localhost
+#for production
+  #write_timeout: 1
+  #read_timeout: 1
