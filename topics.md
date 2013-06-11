@@ -6,3 +6,10 @@
 - Nested forms, build, attributes...
 - Rails Presenters: Draper
 - FormObjects
+
+##Install haml -> erb converter: HERBALIZER
+
+- sudo apt-get install ghc6 ghc6-prof ghc6-doc cabal-install
+- cabal update
+- cabal install herbalizer
+- sudo ln ~/.cabal/bin/herbalizer /usr/bin/herbalizer
