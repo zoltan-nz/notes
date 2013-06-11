@@ -5,3 +5,4 @@
 - include_blank: false
 - Nested forms, build, attributes...
 - Rails Presenters: Draper
+- FormObjects
