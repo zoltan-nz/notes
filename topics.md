@@ -13,3 +13,11 @@
 - cabal update
 - cabal install herbalizer
 - sudo ln ~/.cabal/bin/herbalizer /usr/bin/herbalizer
+
+#Nested forms with checkboxes, many through associations
+
+- build
+- fields_for
+- strong parameters
+- controller update, saving
+- validations
