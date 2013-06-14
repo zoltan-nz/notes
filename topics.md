@@ -21,3 +21,5 @@
 - strong parameters
 - controller update, saving
 - validations
+
+###Drag and drop, sorted list, jquery
