@@ -21,3 +21,9 @@ if defined? Hirb
 
   Hirb.enable({width: 500, height: 500})
 end
+
+
+#For project
+
+Thread.current[:tenant_id] = 2
+@pc = ProductCategory.find(7)
