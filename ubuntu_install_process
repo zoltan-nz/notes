@@ -1,0 +1,9 @@
+sudo apt-get update
+sudo apt-get distupgrade
+sudo apt-get install mc build-essential
+
+option: install virtual machine support files
+
+
+
+
