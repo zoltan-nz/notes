@@ -24,5 +24,7 @@ http://jeromejaglale.com/doc/unix/ubuntu_sudo_without_password
     curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
 Making zsh default:
+
     chsh -s $(which zsh)
+    
 Log out log back
