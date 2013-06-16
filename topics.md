@@ -24,4 +24,5 @@
 
 ###Drag and drop, sorted list, jquery
 
-    this is a code
+Railscast http://railscasts.com/episodes/147-sortable-lists-revised
+
