@@ -19,7 +19,7 @@ if defined? Hirb
     end
   end
 
-  Hirb.enable({width: 500, height: 500})
+  Hirb.enable({width: 200, height: 500})
 end
 
 
