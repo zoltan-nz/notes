@@ -31,3 +31,9 @@ Making zsh default:
 Log out log back
 
 - fonts => /usr/share/fonts
+- 
+### Installing java 7
+
+    sudo add-apt-repository ppa:webupd8team/java
+    sudo apt-get update
+    sudo apt-get install oracle-java7-installer
