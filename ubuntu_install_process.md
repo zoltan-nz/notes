@@ -1,6 +1,6 @@
     sudo apt-get update
     sudo apt-get dist-upgrade
-    sudo apt-get install mc build-essential curl zsh git
+    sudo apt-get install mc build-essential curl zsh git mysql-server mysql-client mysql-workbench libmysqlclient-dev libmysqlclient18
 
 option: install virtual machine support files
 
@@ -16,7 +16,7 @@ http://jeromejaglale.com/doc/unix/ubuntu_sudo_without_password
     rvm autolibs enable
     rvm install ruby-2.0.0
     
-    sudo apt-get install mysql-server mysql-client mysql-workbench libmysqlclient-dev libmysqlclient18
+    #sudo apt-get install mysql-server mysql-client mysql-workbench libmysqlclient-dev libmysqlclient18
 setup gemrc because of ri docs
 setup pryrc
     
