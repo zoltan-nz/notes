@@ -1,6 +1,6 @@
     sudo apt-get update
     sudo apt-get dist-upgrade
-    sudo apt-get install mc build-essential curl zsh git mysql-server mysql-client mysql-workbench libmysqlclient-dev libmysqlclient18
+    sudo apt-get install mc build-essential curl zsh git mysql-server mysql-client mysql-workbench libmysqlclient-dev libmysqlclient18 nodejs
 
 option: install virtual machine support files
 
