@@ -16,8 +16,8 @@ http://jeromejaglale.com/doc/unix/ubuntu_sudo_without_password
     rvm autolibs enable
     rvm install ruby-2.0.0
     
-    sudo apt-get install mysql-server
-    sudo apt-get install libmysqlclient-dev libmysqlclient16
+    sudo apt-get install mysql-server mysql-client mysql-workbench libmysqlclient-dev libmysqlclient18
+setup gemrc because of ri docs
     
 
 ###ZSH
@@ -28,3 +28,5 @@ Making zsh default:
     chsh -s $(which zsh)
     
 Log out log back
+
+- fonts
