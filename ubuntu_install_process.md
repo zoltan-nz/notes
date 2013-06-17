@@ -18,6 +18,7 @@ http://jeromejaglale.com/doc/unix/ubuntu_sudo_without_password
     
     sudo apt-get install mysql-server mysql-client mysql-workbench libmysqlclient-dev libmysqlclient18
 setup gemrc because of ri docs
+setup pryrc
     
 
 ###ZSH
@@ -29,4 +30,4 @@ Making zsh default:
     
 Log out log back
 
-- fonts
+- fonts => /usr/share/fonts
