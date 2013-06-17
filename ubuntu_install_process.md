@@ -37,3 +37,7 @@ Log out log back
     sudo add-apt-repository ppa:webupd8team/java
     sudo apt-get update
     sudo apt-get install oracle-java7-installer
+    
+### Generating SSH keys
+
+https://help.github.com/articles/generating-ssh-keys
