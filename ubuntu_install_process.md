@@ -30,8 +30,8 @@ Making zsh default:
     
 Log out log back
 
-- fonts => /usr/share/fonts
-- 
+fonts => /usr/share/fonts
+ 
 ### Installing java 7
 
     sudo add-apt-repository ppa:webupd8team/java
@@ -41,3 +41,8 @@ Log out log back
 ### Generating SSH keys
 
 https://help.github.com/articles/generating-ssh-keys
+
+### AHCI enable on linux MacBook Pro 3,1
+
+Insert following in /boot/grub/grub.cfg
+setpci -s 0:1f.2 90.b=60
