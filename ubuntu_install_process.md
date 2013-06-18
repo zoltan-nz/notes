@@ -45,4 +45,5 @@ https://help.github.com/articles/generating-ssh-keys
 ### AHCI enable on linux MacBook Pro 3,1
 
 Insert following in /boot/grub/grub.cfg
-setpci -s 0:1f.2 90.b=60
+
+    setpci -s 0:1f.2 90.b=60
