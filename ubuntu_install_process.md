@@ -47,3 +47,8 @@ https://help.github.com/articles/generating-ssh-keys
 Insert following in /boot/grub/grub.cfg
 
     setpci -s 0:1f.2 90.b=60
+
+### MacTel Support install
+
+    sudo add-apt-repository ppa:mactel-support/ppa
+    sudo apt-get install macfanctld pommed
