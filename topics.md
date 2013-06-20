@@ -6,6 +6,7 @@
 - Nested forms, build, attributes...
 - Rails Presenters: Draper
 - FormObjects
+- More forms on the same page
 
 ##Install haml -> erb converter: HERBALIZER
 
