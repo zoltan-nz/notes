@@ -52,3 +52,8 @@ Insert following in /boot/grub/grub.cfg
 
     sudo add-apt-repository ppa:mactel-support/ppa
     sudo apt-get install macfanctld pommed
+    
+### Everything together
+
+    sudo add-apt-repository ppa:webupd8team/java -y && sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get install mc build-essential curl zsh git mysql-server mysql-client mysql-workbench libmysqlclient-dev libmysqlclient18 nodejs oracle-java7-installer -y && curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh && chsh -s $(which zsh) && \curl -L https://get.rvm.io | sudo bash && sudo adduser username rvm
+
