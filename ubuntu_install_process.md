@@ -47,6 +47,8 @@ https://help.github.com/articles/generating-ssh-keys
 Insert following in /boot/grub/grub.cfg
 
     setpci -s 0:1f.2 90.b=60
+    
+http://blogs.gnome.org/diegoe/2012/10/14/enabling-sata-ahci-on-a-linux-macbook31/
 
 ### MacTel Support install
 
