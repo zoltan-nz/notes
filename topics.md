@@ -8,6 +8,7 @@
 - FormObjects
 - More forms on the same page
 - Using vagrant for projects...
+- Test results about why faster ruby in virtual machine than in native way...
 
 ##Install haml -> erb converter: HERBALIZER
 
