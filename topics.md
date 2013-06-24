@@ -7,6 +7,7 @@
 - Rails Presenters: Draper
 - FormObjects
 - More forms on the same page
+- Using vagrant for projects...
 
 ##Install haml -> erb converter: HERBALIZER
 
