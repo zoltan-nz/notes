@@ -7,7 +7,7 @@
 - Rails Presenters: Draper
 - FormObjects
 - More forms on the same page
-- Using vagrant for projects...
+- Using vagrant for projects... (Don't use 4.2.14 virtualbox...)
 - Test results about why faster ruby in virtual machine than in native way...
 
 ##Install haml -> erb converter: HERBALIZER
