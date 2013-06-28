@@ -91,5 +91,8 @@ routes:
 
 views:
 
-   table, data: update-url
+    table, data: update-url
    
+##Virtualbox headless start
+
+    VBoxManage startvm "VM name" --type headless
