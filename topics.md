@@ -96,3 +96,31 @@ views:
 ##Virtualbox headless start
 
     VBoxManage startvm "VM name" --type headless
+    
+Shutting down:
+
+Source: http://askubuntu.com/questions/82015/shutting-down-ubuntu-server-running-in-headless-virtualbox
+
+Shutting down a guest using VBoxManage
+A virtual machine can be controlled by command line using the VBoxManage command line tool:
+
+    VBoxManage controlvm [nameofmachine] savestate       # saves the state of the VM like in suspend
+    VBoxManage controlvm [nameofmachine] poweroff        # simply "unplugs" the VM
+    VBoxManage controlvm [nameofmachine] acpipowerbutton # sends ACPI poweroff signal
+    
+For power off by ACPI the virtual OS needs to be capable to do so, and VirtualBox may also need to enable ACPI support for the VM.
+
+Enable VirtualBox ACPI options:
+
+    VBoxManage [nameofmachine] modifyvm --acpi on
+
+Install ACPI support in the Ubuntu VM:
+
+    sudo apt-get install acpid
+Shutting down guest from SSH
+
+A safer way to shut down the machine in case you have SSH access woud be to issue
+
+    user@virtualmachine: sudo poweroff
+
+This will take care to safely shut down and poweroff your guest OS.
