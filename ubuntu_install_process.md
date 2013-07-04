@@ -66,3 +66,9 @@ http://blogs.gnome.org/diegoe/2012/10/14/enabling-sata-ahci-on-a-linux-macbook31
 ### rmagic
 
     sudo apt-get install libmagickwand-dev
+
+### Install Sublime Text
+
+Source: http://www.technoreply.com/how-to-install-sublime-text-2-on-ubuntu-12-04-unity/
+
+
