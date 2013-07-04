@@ -153,3 +153,7 @@ http://www.codebeerstartups.com/2013/04/must-have-gems-for-development-machine-i
       gem 'request-log-analyzer'
       gem 'smusher'
       gem 'zeus' # don't add this in your gemfile.
+
+###Ruby environment changer alternatives
+
+https://github.com/wayneeseguin/rvm/blob/master/help/alt.md
