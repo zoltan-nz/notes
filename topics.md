@@ -158,3 +158,7 @@ http://www.codebeerstartups.com/2013/04/must-have-gems-for-development-machine-i
 ###Ruby environment changer alternatives
 
 https://github.com/wayneeseguin/rvm/blob/master/help/alt.md
+
+### Have to watch
+
+http://railscasts.com/episodes/394-sti-and-polymorphic-associations?view=comments
