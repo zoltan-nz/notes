@@ -162,3 +162,18 @@ https://github.com/wayneeseguin/rvm/blob/master/help/alt.md
 ### Have to watch
 
 http://railscasts.com/episodes/394-sti-and-polymorphic-associations?view=comments
+
+### Livereload settings
+
+Don't mention sass and coffee!
+
+Guardfile:
+
+    guard 'livereload' do
+      watch(%r{app/views/.+\.(erb|haml|slim)$})
+      watch(%r{app/helpers/.+\.rb})
+      watch(%r{public/.+\.(css|js|html)})
+      watch(%r{config/locales/.+\.yml})
+      # Rails Assets Pipeline
+      watch(%r{(app|vendor)(/assets/\w+/(.+\.(css|js|html))).*}) { |m| "/assets/#{m[3]}" }
+    end
