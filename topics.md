@@ -177,3 +177,11 @@ Guardfile:
       # Rails Assets Pipeline
       watch(%r{(app|vendor)(/assets/\w+/(.+\.(css|js|html))).*}) { |m| "/assets/#{m[3]}" }
     end
+
+### Speed up java app
+
+Source: http://ubuntuforums.org/showthread.php?t=1129187
+
+The trick:
+
+    -Dsun.java2d.opengl=true
