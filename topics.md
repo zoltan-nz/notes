@@ -185,3 +185,16 @@ Source: http://ubuntuforums.org/showthread.php?t=1129187
 The trick:
 
     -Dsun.java2d.opengl=true
+
+### RubyMine /opt/RM/bin/rubymine64.vmoptions
+
+    -Xms256m
+    -Xmx1024m
+    -XX:MaxPermSize=512m
+    -XX:ReservedCodeCacheSize=128m
+    -XX:+UseCodeCacheFlushing
+    -XX:+UseCompressedOops
+    -ea
+    -Dsun.io.useCanonCaches=false
+    -Djava.net.preferIPv4Stack=true
+    -Dsun.java2d.opengl=true
