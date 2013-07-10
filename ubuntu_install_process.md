@@ -72,3 +72,12 @@ http://blogs.gnome.org/diegoe/2012/10/14/enabling-sata-ahci-on-a-linux-macbook31
 Source: http://www.technoreply.com/how-to-install-sublime-text-2-on-ubuntu-12-04-unity/
 
 
+### Pidgin settings
+
+Disable notification: http://www.patanachai.com/2009/05/disable-online-user-notification-in.html
+
+### Get back the old scrollbar:
+
+http://cres2657.wordpress.com/2013/05/29/how-to-get-the-old-scroll-bars-back-in-ubuntu-13-04/
+
+    gsettings set com.canonical.desktop.interface scrollbar-mode normal
