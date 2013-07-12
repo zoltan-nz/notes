@@ -12,6 +12,7 @@
 - Use for determining remote ruby: $ which ruby
 - Caching in Rails. Dali, mini-profiler...
 - Ubuntu topic: comparison Ubuntu, Lubuntu, Xubuntu
+- Install ubuntu in virtualbox for rails development on windows 7
 
 ##Install haml -> erb converter: HERBALIZER
 
