@@ -201,3 +201,8 @@ The trick:
     -Dsun.io.useCanonCaches=false
     -Djava.net.preferIPv4Stack=true
     -Dsun.java2d.opengl=true
+
+
+### Semantic form for option
+
+    f.inputs for: '' do |f|
