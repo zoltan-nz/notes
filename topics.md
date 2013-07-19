@@ -206,3 +206,16 @@ The trick:
 ### Semantic form for option
 
     f.inputs for: '' do |f|
+
+### How many gems do you use in your project
+
+echo "We are using `cat Gemfile | grep "gem" | grep -v "#gem" | wc -l` gems in our project"
+
+### Creating icons from your images
+
+http://fontcustom.com/
+
+    sudo apt-get install fontforge ttfautohint
+    wget http://people.mozilla.com/~jkew/woff/woff-code-latest.zip
+    unzip woff-code-latest.zip -d sfnt2woff && cd sfnt2woff && make && sudo mv sfnt2woff /usr/local/bin/
+    gem install fontcustom
