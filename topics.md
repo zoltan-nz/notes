@@ -219,3 +219,7 @@ http://fontcustom.com/
     wget http://people.mozilla.com/~jkew/woff/woff-code-latest.zip
     unzip woff-code-latest.zip -d sfnt2woff && cd sfnt2woff && make && sudo mv sfnt2woff /usr/local/bin/
     gem install fontcustom
+
+### Using Ruby on Rails for Wordpress database management
+
+An option, using JSON api in wordpress and connect with this api to your Rails app. http://wordpress.org/plugins/json-api/
