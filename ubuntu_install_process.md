@@ -77,6 +77,10 @@ http://blogs.gnome.org/diegoe/2012/10/14/enabling-sata-ahci-on-a-linux-macbook31
 
 Source: http://www.technoreply.com/how-to-install-sublime-text-2-on-ubuntu-12-04-unity/
 
+    sudo add-apt-repository ppa:webupd8team/sublime-text-2
+    sudo apt-get update
+    sudo apt-get install sublime-text-installer
+
 
 ### Pidgin settings
 
