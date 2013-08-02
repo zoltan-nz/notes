@@ -93,3 +93,7 @@ http://cres2657.wordpress.com/2013/05/29/how-to-get-the-old-scroll-bars-back-in-
     sudo add-apt-repository ppa:danielrichter2007/grub-customizer
     sudo apt-get update
     sudo apt-get install grub-customizer
+
+### Install wifi on linux mint
+
+    sudo apt-get --purge --reinstall install bcmwl-kernel-source
