@@ -87,3 +87,9 @@ Disable notification: http://www.patanachai.com/2009/05/disable-online-user-noti
 http://cres2657.wordpress.com/2013/05/29/how-to-get-the-old-scroll-bars-back-in-ubuntu-13-04/
 
     gsettings set com.canonical.desktop.interface scrollbar-mode normal
+    
+### Install Grup Customizer
+
+    sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+    sudo apt-get update
+    sudo apt-get install grub-customizer
