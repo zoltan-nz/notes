@@ -15,6 +15,7 @@
 - Install ubuntu in virtualbox for rails development on windows 7
 - Creating complicated form with default form helper with formtastic and with simple form. ERB and HAML templates.
 - Rails debugging in RubyMine
+- Live coding options (http://livestyle.emmet.io/)
 
 ##Install haml -> erb converter: HERBALIZER
 
