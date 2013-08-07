@@ -101,3 +101,13 @@ http://cres2657.wordpress.com/2013/05/29/how-to-get-the-old-scroll-bars-back-in-
 ### Install wifi on linux mint
 
     sudo apt-get --purge --reinstall install bcmwl-kernel-source
+
+### Setup Chrome as default browser on Linux Mint
+
+Step 1
+
+    sudo cp /opt/google/chrome/google-chrome.desktop /usr/share/applications
+    
+Step 2
+
+Now default application settings will work.
