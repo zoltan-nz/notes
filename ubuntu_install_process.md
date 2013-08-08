@@ -111,3 +111,8 @@ Step 1
 Step 2
 
 Now default application settings will work.
+
+
+### Mount samba folder
+
+ sudo mount -t cifs -o user=name //samba/shared/folder ~/local/folder
