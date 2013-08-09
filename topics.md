@@ -16,6 +16,7 @@
 - Creating complicated form with default form helper with formtastic and with simple form. ERB and HAML templates.
 - Rails debugging in RubyMine
 - Live coding options (http://livestyle.emmet.io/)
+- Client side and server side validation
 
 ##Install haml -> erb converter: HERBALIZER
 
@@ -225,3 +226,8 @@ http://fontcustom.com/
 ### Using Ruby on Rails for Wordpress database management
 
 An option, using JSON api in wordpress and connect with this api to your Rails app. http://wordpress.org/plugins/json-api/
+
+
+### jquery.validate plugin
+
+http://jqueryvalidation.org/documentation/
