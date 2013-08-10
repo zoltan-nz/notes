@@ -50,6 +50,10 @@ Insert following in /boot/grub/grub.cfg
     
 http://blogs.gnome.org/diegoe/2012/10/14/enabling-sata-ahci-on-a-linux-macbook31/
 
+MacbookPro, setup boot:
+    
+    bless --device /dev/disk0s1 --setBoot --legacy
+
 ### MacTel Support install
 
     sudo add-apt-repository ppa:mactel-support/ppa
