@@ -18,6 +18,7 @@
 - Live coding options (http://livestyle.emmet.io/)
 - Client side and server side validation
 - Install other operation system on a raw disk from ubuntu/mac via virtual computer
+- Sorting with drag and drop, usign jquery ui and saving in the database, using data for url
 
 ##Install haml -> erb converter: HERBALIZER
 
