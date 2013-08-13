@@ -106,6 +106,13 @@ http://cres2657.wordpress.com/2013/05/29/how-to-get-the-old-scroll-bars-back-in-
 
     sudo apt-get --purge --reinstall install bcmwl-kernel-source
 
+### Install Google Chrome on Linux Mint
+
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+
+
 ### Setup Chrome as default browser on Linux Mint
 
 Step 1
