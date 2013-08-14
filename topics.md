@@ -235,3 +235,7 @@ An option, using JSON api in wordpress and connect with this api to your Rails a
 ### jquery.validate plugin
 
 http://jqueryvalidation.org/documentation/
+
+### Action Cache topic
+
+Deprecated in Rails 4, but how could you use it anyway?
