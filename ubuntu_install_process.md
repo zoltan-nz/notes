@@ -127,3 +127,14 @@ Now default application settings will work.
 ### Mount samba folder
 
  sudo mount -t cifs -o user=name //samba/shared/folder ~/local/folder
+
+### Install latest virtualbox
+
+    su -sh -c ' echo "deb http://download.virtualbox.org/virtualbox/debian raring contrib" >> /etc/apt/sources.list'
+    wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
+    sudo apt-get update
+    sudo apt-get install virtualbox-4.2
+
+### Bleeding Edge
+
+    http://bleedingedge.sourceforge.net/
