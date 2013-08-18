@@ -21,7 +21,7 @@
 - Sorting with drag and drop, usign jquery ui and saving in the database, using data for url
 - update_params() and update_all differencies, which more effective
 - how to use curl
-- How to manage registration and login with Devise and with modal windows.
+- How to manage registration and login with Devise and with modal windows. (http://pupeno.com/2010/08/29/show-a-devise-log-in-form-in-another-page/)
 
 ##Install haml -> erb converter: HERBALIZER
 
