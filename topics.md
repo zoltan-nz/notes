@@ -24,6 +24,7 @@
 - How to manage registration and login with Devise and with modal windows. (http://pupeno.com/2010/08/29/show-a-devise-log-in-form-in-another-page/)
    http://natashatherobot.com/devise-rails-sign-in/
 - Using Bootstrap 3 - Creating customized Bootstrap 3 team
+- Design patterns
 
 ##Install haml -> erb converter: HERBALIZER
 
