@@ -138,3 +138,9 @@ Now default application settings will work.
 ### Bleeding Edge
 
     http://bleedingedge.sourceforge.net/
+
+### Install Greybird and Blackbird style on Linux Mint
+
+    sudo add-apt-repository ppa:shimmerproject/ppa
+    sudo apt-get update
+    sudo apt-get install shimmer-themes
