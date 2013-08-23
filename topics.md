@@ -243,3 +243,8 @@ http://jqueryvalidation.org/documentation/
 ### Action Cache topic
 
 Deprecated in Rails 4, but how could you use it anyway?
+
+### Install latest NodeJs
+
+    sudo apt-get update && sudo apt-get install python-software-properties python g++ make -y && sudo add-apt-repository ppa:chris-lea/node.js && sudo apt-get update && sudo apt-get install nodejs -y
+
