@@ -1,0 +1,10 @@
+### Settings watcher in phpstorm or rubymine
+
+	gem install rubygems-bundler
+	rubygems-bundler-uninstaller
+	gem uninstall rubygems-bundler
+
+Settings > File Watcher
+
+SASS > Path >
+Path = '/where/rvm/installed/ruby/bin'
