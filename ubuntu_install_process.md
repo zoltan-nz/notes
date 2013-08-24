@@ -144,3 +144,7 @@ Now default application settings will work.
     sudo add-apt-repository ppa:shimmerproject/ppa
     sudo apt-get update
     sudo apt-get install shimmer-themes
+
+### php5.5 repos
+
+    sudo add-apt-repository ppa:ondrej/php5
