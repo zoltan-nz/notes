@@ -25,6 +25,7 @@
    http://natashatherobot.com/devise-rails-sign-in/
 - Using Bootstrap 3 - Creating customized Bootstrap 3 team
 - Design patterns
+- A post about why faster .size than .length and .count in ActiveRecord
 
 ##Install haml -> erb converter: HERBALIZER
 
