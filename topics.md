@@ -249,3 +249,33 @@ Deprecated in Rails 4, but how could you use it anyway?
 
     sudo apt-get update && sudo apt-get install python-software-properties python g++ make -y && sudo add-apt-repository ppa:chris-lea/node.js && sudo apt-get update && sudo apt-get install nodejs -y
 
+### Creating RAMDISK for mysql database for boosting dev process
+
+http://themattreid.com/wordpress/2011/04/04/mysql-and-ramdisk-or-how-to-make-tmpdir-usage-queries-faster/
+
+http://www.linuxscrew.com/2010/03/24/fastest-way-to-create-ramdisk-in-ubuntulinux/
+
+    mkdir /tmp/ramdisk; chmod 777 /tmp/ramdisk
+    mount -t tmpfs -o size=256M tmpfs /tmp/ramdisk/
+
+Update /etc/mysql/my.conf
+    [mysqld]
+    #
+    # * Basic Settings
+    #
+    user    = mysql
+    pid-file  = /var/run/mysqld/mysqld.pid
+    socket    = /var/run/mysqld/mysqld.sock
+    port    = 3306
+    basedir   = /usr
+    #datadir  = /var/lib/mysql
+    datadir   = /tmp/ramdisk/mysql
+    #tmpdir   = /tmp
+    tmpdir    = /tmp/ramdisk
+
+Create /tmp/ramdisk/mysql folder
+    sudo chown mysql:mysql /tmp/ramdisk/mysql
+
+Copy everything from /var/lib/mysql in /tmp/ramdisk/mysql
+
+
