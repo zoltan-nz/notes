@@ -26,6 +26,7 @@
 - Using Bootstrap 3 - Creating customized Bootstrap 3 team
 - Design patterns
 - A post about why faster .size than .length and .count in ActiveRecord
+- Update more record in one query with Active Record in Rails
 
 ##Install haml -> erb converter: HERBALIZER
 
@@ -279,3 +280,24 @@ Create /tmp/ramdisk/mysql folder
 Copy everything from /var/lib/mysql in /tmp/ramdisk/mysql
 
 
+### Update more record in one query with Active Record in Rails
+
+    #List of product ids in sorted order. Get from jqueryui sortable plugin.
+    #product_ids = [3,1,2,4,7,6,5]
+     
+    #product_ids.each_with_index do |id, index|
+    #  Product.where(id: id).update_all(sort_order: index+1)
+    #end
+     
+    ##CASE syntax example:
+    ##Product.where(id: product_ids).update_all("sort_order = CASE id WHEN 539 THEN 1 WHEN 540 THEN 2 WHEN 542 THEN 3 END")
+     
+    case_string = "sort_order = CASE id "      
+        
+    product_ids.each_with_index do |id, index|
+      case_string += "WHEN #{id} THEN #{index+1} "
+    end
+        
+    case_string += "END"
+               
+    Product.where(id: product_ids).update_all(case_string)
