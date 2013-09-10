@@ -27,6 +27,8 @@
 - Design patterns
 - A post about why faster .size than .length and .count in ActiveRecord
 - Update more record in one query with Active Record in Rails
+- Backbone with mustache, with handlebar, emblem... in slim or in haml... in rails and in other framework
+- A website about one project with different frameworks... comparision...
 
 ##Install haml -> erb converter: HERBALIZER
 
