@@ -10,3 +10,7 @@ My dotfiles
 
 - .pryrc - Hirb enabled...
 - .gemrc - Turning off rdoc and ri
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/szines/dotfiles/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
