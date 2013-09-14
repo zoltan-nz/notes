@@ -22,8 +22,8 @@ anyway, your mileage may vary, but that fixed it for me. :-)
 
 (probably just doing the unset GIT_SSH is enough, but I was on a roll)
 
-###Install ruby on windows environment
+###Install mysql2 on windows
 
-Steps
-Mysql
-Tricky packages...
+1. Download connector. http://dev.mysql.com/downloads/connector/c/
+2. Copy libmysql.dll in ruby/bin folder.
+3. Run this: gem install mysql2 --platform=ruby -- --with-mysql-dir=/c/dev/ruby/lib /mysql-connector-c-6.1.1-winx64
