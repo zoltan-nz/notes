@@ -21,3 +21,9 @@ and it worked after that,.. I guess putty saves its keys somewhere else as $HOME
 anyway, your mileage may vary, but that fixed it for me. :-)
 
 (probably just doing the unset GIT_SSH is enough, but I was on a roll)
+
+###Install ruby on windows environment
+
+Steps
+Mysql
+Tricky packages...
