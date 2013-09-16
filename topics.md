@@ -311,38 +311,38 @@ Source: http://railscasts.com/episodes/329-more-on-twitter-bootstrap?view=commen
 
 config/initializers/will_paginate.rb
 
-  if defined?(WillPaginate)
-    module WillPaginate
-      module ActionView
-        def will_paginate(collection = nil, options = {})
-          options[:renderer] ||= BootstrapLinkRenderer
-          super.try :html_safe
-        end
-
-        class BootstrapLinkRenderer < LinkRenderer
-          protected
-
-          def html_container(html)
-            tag :div, tag(:ul, html), container_attributes
+    if defined?(WillPaginate)
+      module WillPaginate
+        module ActionView
+          def will_paginate(collection = nil, options = {})
+            options[:renderer] ||= BootstrapLinkRenderer
+            super.try :html_safe
           end
 
-          def page_number(page)
-            tag :li, link(page, page, :rel => rel_value(page)), :class => ('active' if page == current_page)
-          end
+          class BootstrapLinkRenderer < LinkRenderer
+            protected
 
-          def previous_or_next_page(page, text, classname)
-            tag :li, link(text, page || '#'), :class => [classname[0..3], classname, ('disabled' unless page)].join(' ')
-          end
+            def html_container(html)
+              tag :div, tag(:ul, html), container_attributes
+            end
 
-          def gap
-            tag :li, link(super, '#'), :class => 'disabled'
+            def page_number(page)
+              tag :li, link(page, page, :rel => rel_value(page)), :class => ('active' if page == current_page)
+            end
+
+            def previous_or_next_page(page, text, classname)
+              tag :li, link(text, page || '#'), :class => [classname[0..3], classname, ('disabled' unless page)].join(' ')
+            end
+
+            def gap
+              tag :li, link(super, '#'), :class => 'disabled'
+            end
           end
         end
       end
     end
-  end
 
 For remote: true option in javascript:
 
-  $(document).ajaxComplete (event,request,options) ->
-    $('#pagination-line a').attr('data-remote', 'true')
+    $(document).ajaxComplete (event,request,options) ->
+      $('#pagination-line a').attr('data-remote', 'true')
