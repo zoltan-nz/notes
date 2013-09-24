@@ -30,6 +30,7 @@
 - Backbone with mustache, with handlebar, emblem... in slim or in haml... in rails and in other framework
 - A website about one project with different frameworks... comparision...
 - Will_paginate gem with remote true and with boostrap.
+- Create nice list page with a loads of filter with jquery and with ajax on rails.
 
 ##Install haml -> erb converter: HERBALIZER
 
