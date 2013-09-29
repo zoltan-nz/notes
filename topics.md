@@ -351,4 +351,21 @@ For remote: true option in javascript:
 
 ## Switcher
 
+in the view: 
 
+    .control-group
+        = label_tag :button, 'Loyalty Card Status:', class: 'control-label'
+        .controls
+          .btn-group#customer_loyalty_card_enable_switcher{data: {toggle: 'buttons-radio'}}
+            - default_classes = 'btn customer_loyalty_card_enabled switcher'
+            =button_tag 'Enabled', value: 'true', class: (@customer_loyalty_card.enabled ? default_classes+' active' : default_classes)
+            =button_tag 'Disabled', value: 'false', class: (@customer_loyalty_card.enabled ? default_classes : default_classes+' active')
+            =f.hidden_field :enabled
+
+javascript:
+
+    $('.switcher:not(.bound)').addClass('bound').on('click', switcherManager)
+
+    switcherManager = (e) ->
+      e.preventDefault();
+      $(@).parent().find('input').val($(@).val())
