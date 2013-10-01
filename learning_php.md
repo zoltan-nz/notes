@@ -9,3 +9,4 @@ http://laravel.com/docs/quick
 Tuts+ articles:
 http://net.tutsplus.com/?s=laravel
 
+http://www.sitepoint.com/creating-subscription-based-website-laravel-recurly-1/
