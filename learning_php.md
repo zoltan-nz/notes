@@ -1,13 +1,11 @@
-### Learning php
-
-1. Reading string functions
-
-http://php.net/manual/en/ref.strings.php
-
-2. Reading array functions
-
-http://php.net/manual/en/ref.array.php
+### PHP frameworks:
 
 Zend 2 framework, getting started
-
 http://framework.zend.com/manual/2.2/en/user-guide/overview.html
+
+Laravel 4
+http://laravel.com/docs/quick
+
+Tuts+ articles:
+http://net.tutsplus.com/?s=laravel
+
