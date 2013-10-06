@@ -10,6 +10,12 @@ uninstall thunderbird
 
 http://jeromejaglale.com/doc/unix/ubuntu_sudo_without_password
 
+### Install grup customizer
+
+    sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+    sudo apt-get update
+    sudo apt-get install grub-customizer
+
 ###rvm, mysql install process
     \curl -L https://get.rvm.io | sudo bash
     sudo adduser username rvm
