@@ -154,3 +154,8 @@ Now default application settings will work.
 ### php5.5 repos
 
     sudo add-apt-repository ppa:ondrej/php5
+    
+### Grub paramters
+
+    GRUB_GFXMODE=1440x900x32
+    GRUB_GFXPAYLOAD=1440x900x32
