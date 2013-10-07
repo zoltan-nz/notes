@@ -39,6 +39,8 @@
 - cabal update
 - cabal install herbalizer
 - sudo ln ~/.cabal/bin/herbalizer /usr/bin/herbalizer
+- Development log view customization
+
 
 #Nested forms with checkboxes, many through associations
 
