@@ -33,13 +33,13 @@
 - Create nice list page with a loads of filter with jquery and with ajax on rails.
 - Create filters and using cookie for storing filter settings.
 - Create switcher button with btn-group and change boolean data on hidden field. Details below:
-##Install haml -> erb converter: HERBALIZER
-
+- Install haml -> erb converter: HERBALIZER
 - sudo apt-get install ghc6 ghc6-prof ghc6-doc cabal-install
 - cabal update
 - cabal install herbalizer
 - sudo ln ~/.cabal/bin/herbalizer /usr/bin/herbalizer
 - Development log view customization
+- Caching. Deep level caching and russian doll caching.
 
 
 #Nested forms with checkboxes, many through associations
