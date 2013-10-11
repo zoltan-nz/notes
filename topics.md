@@ -41,6 +41,7 @@
 - Development log view customization
 - Caching. Deep level caching and russian doll caching.
 - Using sortable and dropable jquery in proper way... maybe using of popower in rails
+- Bootstrap popover dynamic content from ajax response.
 
 
 #Nested forms with checkboxes, many through associations
