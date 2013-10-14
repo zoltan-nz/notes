@@ -40,8 +40,11 @@
 - sudo ln ~/.cabal/bin/herbalizer /usr/bin/herbalizer
 - Development log view customization
 - Caching. Deep level caching and russian doll caching.
-- Using sortable and dropable jquery in proper way... maybe using of popower in rails
+- Using sortable and dropable jquery in proper way... maybe using of popover in rails
 - Bootstrap popover dynamic content from ajax response.
+- Deeply nested includes and special eager loading, good example like this: 
+
+      @departments = ProductCategory.where(depth: 0, "products.deleted_at" => nil).includes(:children, {children: :products}).order('products.sort_order').order('children_product_categories.sort_order').order(:sort_order)
 
 
 #Nested forms with checkboxes, many through associations
