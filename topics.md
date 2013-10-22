@@ -45,7 +45,7 @@
 - Deeply nested includes and special eager loading, good example like this: 
 
       @departments = ProductCategory.where(depth: 0, "products.deleted_at" => nil).includes(:children, {children: :products}).order('products.sort_order').order('children_product_categories.sort_order').order(:sort_order)
-
+- Concerns in Controllers and before/after_actions, example: Pusher
 
 #Nested forms with checkboxes, many through associations
 
