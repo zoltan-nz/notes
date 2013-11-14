@@ -46,6 +46,7 @@
 
       @departments = ProductCategory.where(depth: 0, "products.deleted_at" => nil).includes(:children, {children: :products}).order('products.sort_order').order('children_product_categories.sort_order').order(:sort_order)
 - Concerns in Controllers and before/after_actions, example: Pusher
+- Checking a value is float or not: if (!!Float('1.343244') rescue false)
 
 #Nested forms with checkboxes, many through associations
 
