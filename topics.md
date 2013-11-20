@@ -52,7 +52,7 @@
 
 A great command for gem development which load all libs:
 
-   bundle console
+      bundle console
 
 ## Where to put stuff
 http://stackoverflow.com/questions/1068558/oo-design-in-rails-where-to-put-stuff
