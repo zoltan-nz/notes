@@ -53,6 +53,8 @@
 A great command for gem development which load all libs:
 
       bundle console
+      
+More tip: http://rakeroutes.com/blog/lets-write-a-gem-part-two/
 
 ## Where to put stuff
 http://stackoverflow.com/questions/1068558/oo-design-in-rails-where-to-put-stuff
