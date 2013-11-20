@@ -48,6 +48,12 @@
 - Concerns in Controllers and before/after_actions, example: Pusher
 - Checking a value is float or not: if (!!Float('1.343244') rescue false)
 
+## Bundle console
+
+A great command for gem development which load all libs:
+
+   bundle console
+
 ## Where to put stuff
 http://stackoverflow.com/questions/1068558/oo-design-in-rails-where-to-put-stuff
 
