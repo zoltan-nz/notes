@@ -42,6 +42,7 @@
 - Caching. Deep level caching and russian doll caching.
 - Using sortable and dropable jquery in proper way... maybe using of popover in rails
 - Bootstrap popover dynamic content from ajax response.
+- How you separate your logics between files in a huge rails app.
 - Deeply nested includes and special eager loading, good example like this: 
 
       @departments = ProductCategory.where(depth: 0, "products.deleted_at" => nil).includes(:children, {children: :products}).order('products.sort_order').order('children_product_categories.sort_order').order(:sort_order)
