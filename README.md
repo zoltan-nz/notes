@@ -1,15 +1,12 @@
 # My Notes about everything
 
-Check all files, you can find very interesting solutions in each md file...
+Check all files, you can find a couple of interesting solutions in each md file...
 
 
-dotfiles
-========
+## Not just dotfiles
 
-My dotfiles
 
-- .pryrc - Hirb enabled...
-- .gemrc - Turning off rdoc and ri
+
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/szines/dotfiles/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
