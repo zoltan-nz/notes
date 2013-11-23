@@ -392,3 +392,8 @@ javascript:
     switcherManager = (e) ->
       e.preventDefault();
       $(@).parent().find('input').val($(@).val())
+      
+
+## How to write test?
+
+- Don't test api with Capybara.
