@@ -33,6 +33,9 @@
 - Create nice list page with a loads of filter with jquery and with ajax on rails.
 - Create filters and using cookie for storing filter settings.
 - Create switcher button with btn-group and change boolean data on hidden field. Details below:
+
+Filters: using ActiveModel, FormObject, etc... for a clean solution. 
+
 - Install haml -> erb converter: HERBALIZER
 - sudo apt-get install ghc6 ghc6-prof ghc6-doc cabal-install
 - cabal update
