@@ -396,8 +396,10 @@ javascript:
 
 ## How to write test?
 
+
 - Don't test api with Capybara.
-- 
+- Excelent list: [LINK](http://betterspecs.org/)
+
 
 ## Model and Object independent views
 
