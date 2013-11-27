@@ -52,6 +52,22 @@ Filters: using ActiveModel, FormObject, etc... for a clean solution.
 - Concerns in Controllers and before/after_actions, example: Pusher
 - Checking a value is float or not: if (!!Float('1.343244') rescue false)
 
+
+### Devise routing rewrite
+
+      devise_for 
+         :users, 
+         path: 'home', path_names: { sign_in: 'login', sign_out: 'logout', password: 'secret', confirmation: 'verification', unlock: 'unblock', registration: 'register', sign_up: 'sign_up' }, 
+         controllers: {registrations: 'home/signup'} # ./app/controllers/home/signup_controller.rb
+
+
+      devise_scope :user do
+         get   '/login'              => 'devise/sessions#new'
+         get   '/forgotten_password' => 'devise/passwords#new'
+         match '/signup'             => 'home/signup#new',     via: [:get, :post]
+      end
+
+
 ### Getting the current object of a nested form
 
       f.object.(attributes)
