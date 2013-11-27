@@ -68,6 +68,10 @@ Filters: using ActiveModel, FormObject, etc... for a clean solution.
       end
 
 
+And a great description about devise and form object:
+
+[LINK](http://stackoverflow.com/questions/15619951/how-to-create-another-object-when-creating-a-devise-user-from-their-registration)
+
 ### Getting the current object of a nested form
 
       f.object.(attributes)
