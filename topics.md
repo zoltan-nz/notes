@@ -52,6 +52,15 @@ Filters: using ActiveModel, FormObject, etc... for a clean solution.
 - Concerns in Controllers and before/after_actions, example: Pusher
 - Checking a value is float or not: if (!!Float('1.343244') rescue false)
 
+### convert percentage to fraction
+
+    def convert_super_rate_to_fraction
+       self.super_rate = self.super_rate.to_f/100 if percentage?
+    end
+    
+    def percentage?
+       (self.super_rate.to_s.include?('%')) or (self.super_rate.to_f > 1.0)
+    end
 
 ### Devise routing rewrite
 
