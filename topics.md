@@ -52,6 +52,26 @@ Filters: using ActiveModel, FormObject, etc... for a clean solution.
 - Concerns in Controllers and before/after_actions, example: Pusher
 - Checking a value is float or not: if (!!Float('1.343244') rescue false)
 
+### Creating table header and lines from model
+
+      module EmployeesHelper
+      
+        def table_header
+          table_header = (controller_name.classify.constantize.new.attributes.keys - ['created_at', 'updated_at']).map! {|key| key.titleize}
+          table_header << 'Actions'
+        end
+      
+        def table_lines(line)
+          fields = []
+          line.attributes.keys do |key|
+            fields << line.try(key)
+          end
+          fields
+        end
+      
+      end
+
+
 ### convert percentage to fraction
 
     def convert_super_rate_to_fraction
