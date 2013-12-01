@@ -52,6 +52,33 @@ Filters: using ActiveModel, FormObject, etc... for a clean solution.
 - Concerns in Controllers and before/after_actions, example: Pusher
 - Checking a value is float or not: if (!!Float('1.343244') rescue false)
 
+### Test csv file import
+
+in model:
+
+    def self.import(file)
+       everything_was_right = true
+       CSV.foreach(file.path, headers: true) do |row|
+         Employee.create! row.to_hash
+       end rescue everything_was_right = false
+       everything_was_right
+     end
+
+in rspec:
+
+      describe '#import' do
+
+      it 'should import valid csv content' do
+         file = File.open('./db/employees.csv')
+         expect(Employee.import(file)).to eq true
+         @employees = Employee.all
+         expect(@employees[0].first_name).to eq 'Theresa'
+         expect(@employees[1].last_name).to eq 'Richardson'
+      end
+
+  end
+
+
 ### Creating table header and lines from model
 
       module EmployeesHelper
