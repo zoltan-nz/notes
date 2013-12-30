@@ -1,0 +1,2 @@
+Program: handlebars
+Arguments: $ProjectFileDir$/app/assets/javascripts/catalogs/templates -f $ProjectFileDir$/app/assets/javascripts/catalogs/templates.js -e hbs -n Ember.TEMPLATES
