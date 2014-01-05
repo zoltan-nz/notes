@@ -54,7 +54,7 @@ Filters: using ActiveModel, FormObject, etc... for a clean solution.
 
 ### Backbone
 
-(http://addyosmani.github.io/backbone-fundamentals/)[http://addyosmani.github.io/backbone-fundamentals/]
+[http://addyosmani.github.io/backbone-fundamentals/](http://addyosmani.github.io/backbone-fundamentals/)
 
 ### Test csv file import
 
