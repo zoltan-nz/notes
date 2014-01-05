@@ -52,6 +52,10 @@ Filters: using ActiveModel, FormObject, etc... for a clean solution.
 - Concerns in Controllers and before/after_actions, example: Pusher
 - Checking a value is float or not: if (!!Float('1.343244') rescue false)
 
+### Backbone
+
+(http://addyosmani.github.io/backbone-fundamentals/)[http://addyosmani.github.io/backbone-fundamentals/]
+
 ### Test csv file import
 
 in model:
