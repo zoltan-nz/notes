@@ -508,3 +508,13 @@ javascript:
        fields
       end
 
+## Nested set again
+
+      .category_group{data: {child_of: list.first.parent_product_category_id, depth: list.first.depth}, style: 'display: none', class: "depth-#{list.first.depth}"}
+        - sublist = []
+        - list.each do |l|
+          - unless l.depth == 0
+            =button_tag l.name, data: {target_category_group: (l.id if l.children.length > 0), actual_depth: (l.depth),  target_depth: (l.depth+1 if l.children.length > 0), target_product_group: (l.id if l.products.length > 0)}
+          - sublist << l.children if l.children.length > 0
+      - sublist.each do |s|
+        =render 'categories', list: s
