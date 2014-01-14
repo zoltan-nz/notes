@@ -67,7 +67,7 @@ MacbookPro, setup boot:
     
 ### Everything together
 
-    sudo add-apt-repository ppa:webupd8team/java -y && sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get install mc htop build-essential curl zsh git mysql-server mysql-client mysql-workbench libmysqlclient-dev libmysqlclient18 nodejs libmagickwand-dev libxslt1-dev oracle-java7-installer -y && curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh && chsh -s $(which zsh) && \curl -L https://get.rvm.io | sudo bash && sudo adduser username rvm
+    sudo add-apt-repository ppa:webupd8team/java -y && sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get install mc htop build-essential curl zsh git mysql-server mysql-client mysql-workbench libmysqlclient-dev libmysqlclient18 nodejs libmagickwand-dev libxslt1-dev oracle-java7-installer libpq-dev -y && curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh && chsh -s $(which zsh) && \curl -L https://get.rvm.io | sudo bash && sudo adduser username rvm
 
 ### Everything together for vagrant
 
