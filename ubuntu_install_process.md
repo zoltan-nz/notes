@@ -159,3 +159,7 @@ Now default application settings will work.
 
     GRUB_GFXMODE=1440x900x32
     GRUB_GFXPAYLOAD=1440x900x32
+
+### PostgreSQL Configuration
+
+    https://help.ubuntu.com/community/PostgreSQL
