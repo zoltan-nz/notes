@@ -519,3 +519,7 @@ javascript:
           - sublist << l.children if l.children.length > 0
       - sublist.each do |s|
         =render 'categories', list: s
+
+## How to use rails routes in external classes?
+
+    include Rails.application.routes.url_helper
