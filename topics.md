@@ -33,6 +33,7 @@
 - Create nice list page with a loads of filter with jquery and with ajax on rails.
 - Create filters and using cookie for storing filter settings.
 - Create switcher button with btn-group and change boolean data on hidden field. Details below:
+- Using can? in your project determine access for different part of your application.
 
 Filters: using ActiveModel, FormObject, etc... for a clean solution. 
 
