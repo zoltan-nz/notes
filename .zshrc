@@ -45,9 +45,20 @@ plugins=(git git-extras git_remote_branch github rvm rails ruby rake coffee npm 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/rvm/gems/ruby-2.0.0-p195/bin:/usr/local/rvm/gems/ruby-2.0.0-p195@global/bin:/usr/local/rvm/rubies/ruby-2.0.0-p195/bin:/usr/local/rvm/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-7-oracle/bin:/usr/lib/jvm/java-7-oracle/db/bin:/usr/lib/jvm/java-7-oracle/jre/bin
+export PATH=$PATH:/usr/local/heroku/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 
-PATH=$PATH:/usr/local/rvm/bin # Add RVM to PATH for scripting
+alias phpunit='vendor/bin/phpunit'
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+source /home/szines/.rvm/scripts/rvm
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# Changing the path to the Chrome binary
+export CHROME_BIN=/usr/bin/google-chrome
+
+# Changing the path to the Chrome Canary binary
+export CHROME_CANARY_BIN=/usr/bin/google-chrome
+
+# Changing the path to the PhantomJs binary
+export PHANTOMJS_BIN=/usr/bin/phantomjs
+
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh # This loads NVM
