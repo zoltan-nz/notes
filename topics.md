@@ -51,7 +51,8 @@ Filters: using ActiveModel, FormObject, etc... for a clean solution.
 
       @departments = ProductCategory.where(depth: 0, "products.deleted_at" => nil).includes(:children, {children: :products}).order('products.sort_order').order('children_product_categories.sort_order').order(:sort_order)
 - Concerns in Controllers and before/after_actions, example: Pusher
-- Checking a value is float or not: if (!!Float('1.343244') rescue false)
+- Checking a value is float or not: if (!!Float('1.343244') rescue false)... is_a?(Float)
+- Menu generator gems: https://www.ruby-toolbox.com/categories/rails_menu_builders
 
 ### Backbone
 
