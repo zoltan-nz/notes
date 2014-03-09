@@ -524,3 +524,13 @@ javascript:
 ## How to use rails routes in external classes?
 
     include Rails.application.routes.url_helper
+
+## Active admin wysiwig tool
+
+  gem 'activeadmin',  github: 'gregbell/active_admin'
+  gem 'activeadmin-dragonfly', github: 'stefanoverna/activeadmin-dragonfly'
+  gem 'activeadmin-wysihtml5', github: 'stefanoverna/activeadmin-wysihtml5'
+  gem 'polyamorous',  github: 'activerecord-hackery/polyamorous'
+  gem 'formtastic',   github: 'justinfrench/formtastic'
+  gem 'ransack',      github: 'activerecord-hackery/ransack', branch: 'rails-4.1'
+  gem 'devise',       github: 'plataformatec/devise'
