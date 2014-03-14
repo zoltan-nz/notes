@@ -54,6 +54,10 @@ Filters: using ActiveModel, FormObject, etc... for a clean solution.
 - Checking a value is float or not: if (!!Float('1.343244') rescue false)... is_a?(Float)
 - Menu generator gems: https://www.ruby-toolbox.com/categories/rails_menu_builders
 
+## Idea:
+
+- creating mobi file format from github project or from a website... (download a website with mechanize and creating a mobi file for Kindle)
+
 ### Backbone
 
 [http://addyosmani.github.io/backbone-fundamentals/](http://addyosmani.github.io/backbone-fundamentals/)
