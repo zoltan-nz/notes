@@ -12,5 +12,5 @@ Copy this in ~/.profile:
 
 ### MySQL install on mac
 
-bash <(curl -Ls http://git.io/eUx7rg)
-sudo ln -s /usr/local/mysql/lib/libmysqlclient.18.dylib /usr/lib/libmysqlclient.18.dylib
+    bash <(curl -Ls http://git.io/eUx7rg)
+    sudo ln -s /usr/local/mysql/lib/libmysqlclient.18.dylib /usr/lib/libmysqlclient.18.dylib
