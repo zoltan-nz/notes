@@ -128,16 +128,7 @@ Step 1
 Step 2
 
 Now default application settings will work.
-
-
-### Mount samba folder
-
- sudo mount -t cifs -o user=name //samba/shared/folder ~/local/folder
-
-### Install latest virtualbox
-
-    su -sh -c ' echo "deb http://download.virtualbox.org/virtualbox/debian raring contrib" >> /etc/apt/sources.list'
-    wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
+debian/oracle_vbox.asc -O- | sudo apt-key add -
     sudo apt-get update
     sudo apt-get install virtualbox-4.2
 
@@ -160,6 +151,23 @@ Now default application settings will work.
     GRUB_GFXMODE=1440x900x32
     GRUB_GFXPAYLOAD=1440x900x32
 
+### Mount samba folder
+
+ sudo mount -t cifs -o user=name //samba/shared/folder ~/local/folder
+
+### Install latest virtualbox
+
+    su -sh -c ' echo "deb http://download.virtualbox.org/virtualbox/debian raring contrib" >> /etc/apt/sources.list'
+    wget -q http://download.virtualbox.org/virtualbox/
+
 ### PostgreSQL Configuration
 
     https://help.ubuntu.com/community/PostgreSQL
+
+### Ubuntu install on Retina Display Macbook Pro
+
+    - Upragde to Ubuntu 14.04
+    - Not a real solution yet.
+    - Change resolution to 1920x1200 or smaller.
+
+
