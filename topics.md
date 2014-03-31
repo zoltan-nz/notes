@@ -538,3 +538,7 @@ javascript:
   gem 'formtastic',   github: 'justinfrench/formtastic'
   gem 'ransack',      github: 'activerecord-hackery/ransack', branch: 'rails-4.1'
   gem 'devise',       github: 'plataformatec/devise'
+  
+## How to use arguments in rake tasks with zsh
+
+http://robots.thoughtbot.com/how-to-use-arguments-in-a-rake-task
