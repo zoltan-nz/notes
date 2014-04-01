@@ -542,3 +542,7 @@ javascript:
 ## How to use arguments in rake tasks with zsh
 
 http://robots.thoughtbot.com/how-to-use-arguments-in-a-rake-task
+
+## Create your own gem and test your gem
+
+http://rakeroutes.com/blog/lets-write-a-gem-part-two/
