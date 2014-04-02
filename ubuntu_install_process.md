@@ -170,7 +170,7 @@ debian/oracle_vbox.asc -O- | sudo apt-key add -
     - Not a real solution yet.
     - Change resolution to 1920x1200 or smaller.
 
-### External monitor color fix
+### External monitor color fix for Retina Macbook Pro
 
 /etc/lightdm/xrandr.sh
 
@@ -183,3 +183,11 @@ debian/oracle_vbox.asc -O- | sudo apt-key add -
 /etc/lightdm/lightdm.conf
 
     display-setup-script=/etc/lightdm/xrandr.sh
+
+### Install dev env
+
+- Mongod DB: http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/
+- RabitMQ: http://www.rabbitmq.com/install-debian.html
+- Redis: http://tosbourn.com/2013/12/redis/install-latest-version-redis-ubuntu/
+- NodeJS: https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#ubuntu-mint-elementary-os
+- PhantomJS: http://phantomjs.org/download.html
