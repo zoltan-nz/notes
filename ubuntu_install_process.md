@@ -170,4 +170,16 @@ debian/oracle_vbox.asc -O- | sudo apt-key add -
     - Not a real solution yet.
     - Change resolution to 1920x1200 or smaller.
 
+### External monitor color fix
 
+/etc/lightdm/xrandr.sh
+
+    #!/bin/bash
+    xrandr --output HDMI1 --set "Broadcast RGB" "Full"
+    xrandr --output HDMI2 --set "Broadcast RGB" "Full"
+    
+    sudo chmod +x /etc/lightdm/xrandr.sh
+    
+/etc/lightdm/lightdm.conf
+
+    display-setup-script=/etc/lightdm/xrandr.sh
