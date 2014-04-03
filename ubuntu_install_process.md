@@ -187,6 +187,7 @@ debian/oracle_vbox.asc -O- | sudo apt-key add -
 ### Install dev env
 
 - Mongod DB: http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/
+- ElasticSearch: http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/setup-repositories.html
 - RabitMQ: http://www.rabbitmq.com/install-debian.html
 - Redis: http://tosbourn.com/2013/12/redis/install-latest-version-redis-ubuntu/
 - NodeJS: https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#ubuntu-mint-elementary-os
