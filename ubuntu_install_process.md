@@ -191,3 +191,8 @@ debian/oracle_vbox.asc -O- | sudo apt-key add -
 - Redis: http://tosbourn.com/2013/12/redis/install-latest-version-redis-ubuntu/
 - NodeJS: https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#ubuntu-mint-elementary-os
 - PhantomJS: http://phantomjs.org/download.html
+ 
+### Nautilus in XFCE without forcing background change
+
+    gconftool-2 -s -t bool /apps/nautilus/preferences/show_desktop false
+    gconftool-2 -s -t bool /desktop/gnome/background/draw_background false
