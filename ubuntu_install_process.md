@@ -170,13 +170,14 @@ debian/oracle_vbox.asc -O- | sudo apt-key add -
     - Not a real solution yet.
     - Change resolution to 1920x1200 or smaller.
 
-### External monitor color fix for Retina Macbook Pro
+### External monitor color fix for Retina Macbook Pro (and resolution fix for login screen)
 
 /etc/lightdm/xrandr.sh
 
     #!/bin/bash
     xrandr --output HDMI1 --set "Broadcast RGB" "Full"
     xrandr --output HDMI2 --set "Broadcast RGB" "Full"
+    xrandr --output HDMI1 --primary --mode 1920x1080
     
     sudo chmod +x /etc/lightdm/xrandr.sh
     
