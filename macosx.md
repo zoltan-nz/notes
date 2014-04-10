@@ -14,3 +14,16 @@ Copy this in ~/.profile:
 
     bash <(curl -Ls http://git.io/eUx7rg)
     sudo ln -s /usr/local/mysql/lib/libmysqlclient.18.dylib /usr/lib/libmysqlclient.18.dylib
+
+### ZSH and terminalapp
+
+Add terminalapp plugin to zsh.
+
+### tmux starts automatically 
+
+    https://coderwall.com/p/-mumdg
+    tmux attach -t base || tmux new -s base
+    
+### vi session in terminal
+
+    set -o vi
