@@ -27,3 +27,9 @@ Add terminalapp plugin to zsh.
 ### vi session in terminal
 
     set -o vi
+
+### autosave function in iTerm2 and in vim
+
+Install this vim plugin with clone in ~/.janus if you use janus package.
+
+    https://github.com/sjl/vitality.vim
