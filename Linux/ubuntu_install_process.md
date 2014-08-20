@@ -1,3 +1,6 @@
+Tmux tutorial: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-tmux-on-ubuntu-12-10--2
+
+
     sudo apt-get update
     sudo apt-get dist-upgrade
     sudo apt-get install mc build-essential curl zsh git mysql-server mysql-client mysql-workbench libmysqlclient-dev libmysqlclient18 nodejs libxslt1-dev
