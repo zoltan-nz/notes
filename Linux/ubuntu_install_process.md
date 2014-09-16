@@ -210,3 +210,24 @@ debian/oracle_vbox.asc -O- | sudo apt-key add -
 
     gconftool-2 -s -t bool /apps/nautilus/preferences/show_desktop false
     gconftool-2 -s -t bool /desktop/gnome/background/draw_background false
+
+### Install Elasticsearch, MongoDB, RabitMQ
+
+Elasticsearch install steps in one liner:
+
+```
+cd ~/Downloads && wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.3.2.deb && sudo dpkg -i elasticsearch-1.3.2.deb && sudo update-rc.d elasticsearch defaults 95 10 && sudo /etc/init.d/elasticsearch start
+```
+More info about Elasticsearch installation: https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-on-an-ubuntu-vps
+
+Mongodb install steps in one liner:
+```
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10 && echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list && sudo apt-get update && sudo apt-get install -y mongodb-org && sudo service mongod start
+```
+Source: http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/
+
+RabitMQ install steps in one liner:
+```
+cd ~/Downloads && wget http://www.rabbitmq.com/rabbitmq-signing-key-public.asc && sudo apt-key add rabbitmq-signing-key-public.asc && echo 'deb http://www.rabbitmq.com/debian/ testing main' | sudo tee /etc/apt/sources.list.d/rabitmq.list && sudo apt-get update && sudo apt-get install -y rabbitmq-server
+```
+Source: http://www.rabbitmq.com/install-debian.html
