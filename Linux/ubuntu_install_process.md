@@ -211,7 +211,7 @@ debian/oracle_vbox.asc -O- | sudo apt-key add -
     gconftool-2 -s -t bool /apps/nautilus/preferences/show_desktop false
     gconftool-2 -s -t bool /desktop/gnome/background/draw_background false
 
-### Install Elasticsearch, MongoDB, RabitMQ
+### Install Elasticsearch, MongoDB, RabitMQ, Redis
 
 Elasticsearch install steps in one liner:
 
@@ -231,3 +231,9 @@ RabitMQ install steps in one liner:
 cd ~/Downloads && wget http://www.rabbitmq.com/rabbitmq-signing-key-public.asc && sudo apt-key add rabbitmq-signing-key-public.asc && echo 'deb http://www.rabbitmq.com/debian/ testing main' | sudo tee /etc/apt/sources.list.d/rabitmq.list && sudo apt-get update && sudo apt-get install -y rabbitmq-server
 ```
 Source: http://www.rabbitmq.com/install-debian.html
+
+Redis:
+```
+cd ~/Downloads && sudo apt-get install tcl8.5 && wget http://download.redis.io/releases/redis-2.8.16.tar.gz && tar xzf redis-2.8.16.tar.gz && cd redis-2.8.16 && make && make test && sudo make install && cd utils && sudo ./install_server.sh && sudo service redis_6379 start && sudo update-rc.d redis_6379 defaults
+```
+Source: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis
