@@ -24,11 +24,11 @@ http://jeromejaglale.com/doc/unix/ubuntu_sudo_without_password
     sudo adduser username rvm
     rvm autolibs enable
     rvm install ruby-2.0.0
-    
+
     #sudo apt-get install mysql-server mysql-client mysql-workbench libmysqlclient-dev libmysqlclient18
 setup gemrc because of ri docs
 setup pryrc
-    
+
 
 ###ZSH
     curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
@@ -36,17 +36,17 @@ setup pryrc
 Making zsh default:
 
     chsh -s $(which zsh)
-    
+
 Log out log back
 
 fonts => /usr/share/fonts
- 
+
 ### Installing java 7
 
     sudo add-apt-repository ppa:webupd8team/java
     sudo apt-get update
     sudo apt-get install oracle-java7-installer
-    
+
 ### Generating SSH keys
 
 https://help.github.com/articles/generating-ssh-keys
@@ -56,25 +56,25 @@ https://help.github.com/articles/generating-ssh-keys
 Insert following in /boot/grub/grub.cfg
 
     setpci -s 0:1f.2 90.b=60
-    
+
 http://blogs.gnome.org/diegoe/2012/10/14/enabling-sata-ahci-on-a-linux-macbook31/
 
 MacbookPro, setup boot:
-    
+
     bless --device /dev/disk0s1 --setBoot --legacy
 
 ### MacTel Support install
 
     sudo add-apt-repository ppa:mactel-support/ppa
     sudo apt-get install macfanctld pommed
-    
+
 ### Everything together
 
 ```bash
-sudo add-apt-repository ppa:webupd8team/java -y && sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get install mc htop build-essential curl zsh git nodejs libmagickwand-dev libxslt1-dev oracle-java8-installer libpq-dev libcurl4-gnutls-dev -y 
+sudo add-apt-repository ppa:webupd8team/java -y && sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get install mc htop build-essential curl zsh git nodejs libmagickwand-dev libxslt1-dev oracle-java8-installer libpq-dev libcurl4-gnutls-dev -y
 
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
-chsh -s $(which zsh) 
+chsh -s $(which zsh)
 
 \curl -L https://get.rvm.io | bash
 
@@ -83,14 +83,14 @@ npm install -g bower grunt ember-cli
 
 ### Everything together for vagrant
 
-    sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get install mc build-essential curl zsh git mysql-server mysql-client mysql-workbench libmysqlclient-dev libmysqlclient18 nodejs htop -y && curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh 
-        
-    chsh -s $(which zsh) 
-    
-    \curl -L https://get.rvm.io | sudo bash 
-    
+    sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get install mc build-essential curl zsh git mysql-server mysql-client mysql-workbench libmysqlclient-dev libmysqlclient18 nodejs htop -y && curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+
+    chsh -s $(which zsh)
+
+    \curl -L https://get.rvm.io | sudo bash
+
     sudo adduser username rvm
-    
+
 ### rmagic
 
     sudo apt-get install libmagickwand-dev
@@ -113,7 +113,7 @@ Disable notification: http://www.patanachai.com/2009/05/disable-online-user-noti
 http://cres2657.wordpress.com/2013/05/29/how-to-get-the-old-scroll-bars-back-in-ubuntu-13-04/
 
     gsettings set com.canonical.desktop.interface scrollbar-mode normal
-    
+
 ### Install Grup Customizer
 
     sudo add-apt-repository ppa:danielrichter2007/grub-customizer
@@ -136,7 +136,7 @@ sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /et
 Step 1
 
     sudo cp /opt/google/chrome/google-chrome.desktop /usr/share/applications
-    
+
 Step 2
 
 Now default application settings will work.
@@ -157,7 +157,7 @@ debian/oracle_vbox.asc -O- | sudo apt-key add -
 ### php5.5 repos
 
     sudo add-apt-repository ppa:ondrej/php5
-    
+
 ### Grub paramters
 
     GRUB_GFXMODE=1440x900x32
@@ -190,9 +190,9 @@ debian/oracle_vbox.asc -O- | sudo apt-key add -
     xrandr --output HDMI1 --set "Broadcast RGB" "Full"
     xrandr --output HDMI2 --set "Broadcast RGB" "Full"
     xrandr --output HDMI1 --primary --mode 1920x1080
-    
+
     sudo chmod +x /etc/lightdm/xrandr.sh
-    
+
 /etc/lightdm/lightdm.conf
 
     display-setup-script=/etc/lightdm/xrandr.sh
@@ -205,7 +205,7 @@ debian/oracle_vbox.asc -O- | sudo apt-key add -
 - Redis: http://tosbourn.com/2013/12/redis/install-latest-version-redis-ubuntu/
 - NodeJS: https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#ubuntu-mint-elementary-os
 - PhantomJS: http://phantomjs.org/download.html
- 
+
 ### Nautilus in XFCE without forcing background change
 
     gconftool-2 -s -t bool /apps/nautilus/preferences/show_desktop false
@@ -237,3 +237,14 @@ Redis:
 cd ~/Downloads && sudo apt-get install tcl8.5 && wget http://download.redis.io/releases/redis-2.8.16.tar.gz && tar xzf redis-2.8.16.tar.gz && cd redis-2.8.16 && make && make test && sudo make install && cd utils && sudo ./install_server.sh && sudo service redis_6379 start && sudo update-rc.d redis_6379 defaults
 ```
 Source: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis
+
+### Better font rendering in Linux with Infinality
+
+Source: http://www.webupd8.org/2013/06/better-font-rendering-in-linux-with.html
+
+```
+sudo add-apt-repository ppa:no1wantdthisname/ppa
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install fontconfig-infinality
+```
