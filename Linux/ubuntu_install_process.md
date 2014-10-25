@@ -71,7 +71,7 @@ MacbookPro, setup boot:
 ### Everything together
 
 ```bash
-sudo add-apt-repository ppa:webupd8team/java -y && sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get install mc htop build-essential curl zsh git nodejs libmagickwand-dev libxslt1-dev oracle-java8-installer libpq-dev libcurl4-gnutls-dev -y
+sudo add-apt-repository ppa:webupd8team/java -y && sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get install mc htop build-essential curl zsh git nodejs npm libmagickwand-dev libxslt1-dev oracle-java8-installer libpq-dev libcurl4-gnutls-dev -y
 
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 chsh -s $(which zsh)
