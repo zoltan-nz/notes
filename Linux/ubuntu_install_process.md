@@ -71,7 +71,7 @@ MacbookPro, setup boot:
 ### Everything together
 
 ```bash
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - && sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list' && sudo add-apt-repository ppa:webupd8team/java -y && sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get install mc htop build-essential curl zsh git libmagickwand-dev libxslt1-dev oracle-java8-installer libpq-dev libcurl4-gnutls-dev -y && curl -sL https://deb.nodesource.com/setup | sudo bash - && sudo apt-get update && sudo apt-get install nodejs npm -y 
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - && sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list' && sudo add-apt-repository ppa:webupd8team/java -y && sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get install mc htop build-essential curl zsh git libmagickwand-dev libxslt1-dev oracle-java8-installer libpq-dev libcurl4-gnutls-dev vim -y && curl -sL https://deb.nodesource.com/setup | sudo bash - && sudo apt-get update && sudo apt-get install nodejs google-chrome-stable -y 
 
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 chsh -s $(which zsh)
