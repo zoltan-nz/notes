@@ -1,3 +1,15 @@
+### Save this
+
+```
+#~/.xinitrc
+xinput set-prop 8 267 1.5
+xinput set-prop 8 268 5
+xinput set-prop 8 269 10 
+```
+
+
+
+
 default was:
 Constant Deceleration (273): 1.0
 Adaptive Deceleration (274): 1.0
