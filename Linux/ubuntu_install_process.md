@@ -105,6 +105,11 @@ Source: http://www.technoreply.com/how-to-install-sublime-text-2-on-ubuntu-12-04
     sudo apt-get update
     sudo apt-get install sublime-text-installer
 
+### Installing mouse speed
+
+    sudo add-apt-repository ppa:rubo77/ppa-mouse-speed
+    sudo apt-get update
+    sudo apt-get install mouse-speed
 
 ### Pidgin settings
 
