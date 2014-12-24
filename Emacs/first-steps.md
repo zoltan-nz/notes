@@ -23,3 +23,4 @@ Link: https://github.com/rdallasgray/pallet
 - http://crypt.codemancers.com/posts/2013-09-26-setting-up-emacs-as-development-environment-on-osx/
 - http://emacsrocks.com/e01.html
 - http://melpa.org/#/
+- https://github.com/technomancy/emacs-starter-kit
