@@ -4,6 +4,11 @@
 sudo date --set "01 Nov 2014 15:00:00"
 ```
 
+```
+sudo date {month}{day}{hour}{minute}{year}
+
+```
+
 ###Clone repos from github
 
 ```
