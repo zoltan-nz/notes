@@ -260,3 +260,11 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install fontconfig-infinality
 ```
+
+### OpenJDK with FontFixes
+
+http://www.webupd8.org/2013/06/install-openjdk-patched-with-font-fixes.html
+
+```
+sudo add-apt-repository ppa:no1wantdthisname/openjdk-fontfix --yes && sudo apt-get update && sudo apt-get upgrade --default
+```
