@@ -222,13 +222,13 @@ debian/oracle_vbox.asc -O- | sudo apt-key add -
 ### Install Elasticsearch, MongoDB, RabitMQ, Redis
 
 ```
-cd ~/Downloads && wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.3.2.deb && sudo dpkg -i elasticsearch-1.3.2.deb && sudo update-rc.d elasticsearch defaults 95 10 && sudo /etc/init.d/elasticsearch start && sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10 && echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list && sudo apt-get update && sudo apt-get install -y mongodb-org && sudo service mongod start && cd ~/Downloads && wget http://www.rabbitmq.com/rabbitmq-signing-key-public.asc && sudo apt-key add rabbitmq-signing-key-public.asc && echo 'deb http://www.rabbitmq.com/debian/ testing main' | sudo tee /etc/apt/sources.list.d/rabitmq.list && sudo apt-get update && sudo apt-get install -y rabbitmq-server && cd ~/Downloads && sudo apt-get install tcl8.5 && wget http://download.redis.io/releases/redis-2.8.16.tar.gz && tar xzf redis-2.8.16.tar.gz && cd redis-2.8.16 && make && make test && sudo make install && cd utils && sudo ./install_server.sh && sudo service redis_6379 start && sudo update-rc.d redis_6379 defaults
+cd ~/Downloads && wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.4.2.deb && sudo dpkg -i elasticsearch-1.4.2.deb && sudo update-rc.d elasticsearch defaults 95 10 && sudo /etc/init.d/elasticsearch start && sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10 && echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list && sudo apt-get update && sudo apt-get install -y mongodb-org && sudo service mongod start && cd ~/Downloads && wget http://www.rabbitmq.com/rabbitmq-signing-key-public.asc && sudo apt-key add rabbitmq-signing-key-public.asc && echo 'deb http://www.rabbitmq.com/debian/ testing main' | sudo tee /etc/apt/sources.list.d/rabitmq.list && sudo apt-get update && sudo apt-get install -y rabbitmq-server && cd ~/Downloads && sudo apt-get install tcl8.5 && wget http://download.redis.io/releases/redis-2.8.16.tar.gz && tar xzf redis-2.8.16.tar.gz && cd redis-2.8.16 && make && make test && sudo make install && cd utils && sudo ./install_server.sh && sudo service redis_6379 start && sudo update-rc.d redis_6379 defaults
 ```
 
 Elasticsearch install steps in one liner:
 
 ```
-cd ~/Downloads && wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.3.2.deb && sudo dpkg -i elasticsearch-1.3.2.deb && sudo update-rc.d elasticsearch defaults 95 10 && sudo /etc/init.d/elasticsearch start
+cd ~/Downloads && wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.4.2.deb && sudo dpkg -i elasticsearch-1.4.2.deb && sudo update-rc.d elasticsearch defaults 95 10 && sudo /etc/init.d/elasticsearch start
 ```
 More info about Elasticsearch installation: https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-on-an-ubuntu-vps
 
