@@ -7,9 +7,11 @@ Tmux tutorial: https://www.digitalocean.com/community/tutorials/how-to-install-a
 
 option: install virtual machine support files
 
+```
 install ubuntu tweak
 install google chrome
 uninstall thunderbird
+```
 
 http://jeromejaglale.com/doc/unix/ubuntu_sudo_without_password
 
@@ -29,6 +31,11 @@ http://jeromejaglale.com/doc/unix/ubuntu_sudo_without_password
 setup gemrc because of ri docs
 setup pryrc
 
+### setup dotfiles
+
+https://github.com/mathiasbynens/dotfiles
+
+`git clone https://github.com/mathiasbynens/dotfiles.git && cd dotfiles && source bootstrap.sh`
 
 ###ZSH
     curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
