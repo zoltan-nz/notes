@@ -269,6 +269,10 @@ sudo add-apt-repository ppa:no1wantdthisname/ppa
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install fontconfig-infinality
+
+sudo -H gedit /etc/profile.d/infinality-settings.sh
+
+USE_STYLE="SHARPENED"
 ```
 
 ### OpenJDK with FontFixes
