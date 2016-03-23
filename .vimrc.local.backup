@@ -1,21 +1,35 @@
+map <D-S-]> gt
+map <D-S-[> gT
+map <D-1> 1gt
+map <D-2> 2gt
+map <D-3> 3gt
+
+nnoremap ; :
+
 set mouse=a " Mouse activated
 :au FocusLost * :wa " Save file when focus lost
 
 :set background=dark
 :colorscheme mustang
 
-autocmd FileType ruby let &l:tags = pathogen#legacyjoin(pathogen#uniq(
-      \ pathogen#split(&tags) +
-      \ map(split($GEM_PATH,':'),'v:val."/gems/*/tags"')))
+" autocmd FileType ruby let &l:tags = pathogen#legacyjoin(pathogen#uniq(
+"       \ pathogen#split(&tags) +
+"       \ map(split($GEM_PATH,':'),'v:val."/gems/*/tags"')))
 
-":au BufEnter * NERDTreeFind
+" :au BufEnter * NERDTreeFind
 
-"let mapleader = ","
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
+
+let mapleader = ","
 map <leader>n :NERDTreeFind<cr>
 map <leader>nn :NERDTreeToggle<cr>
 map <esc><esc> :w<cr>
 
-map <leader>ee :e ~/.vimrc.after<cr>
+map <leader>ee :e ~/.vimrc.before.local<cr>:vsp ~/.vimrc.local<cr>
 
 set nowrap
 set linebreak
@@ -29,8 +43,12 @@ set shiftwidth=2
 set noerrorbells
 set nobackup
 set noswapfile
-
-nnoremap ; :
+set nospell
+if has('gui_running')
+    set guifont=Menlo:h16
+    "set guicolors
+    set guioptions+=c
+endif
 
 map <A-h> <C-w>h
 map <A-j> <C-w>j
@@ -50,3 +68,5 @@ set splitright
 "vnoremap <M-k> :m '<-2<CR>gv=gv
 
 vmap <silent> u <esc>:Gdiff<cr>gv:diffget<cr><c-w><c-w>ZZ
+
+Plugin 'airblade/vim-gitgutter'
