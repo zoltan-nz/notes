@@ -35,7 +35,7 @@ export UPDATE_ZSH_DAYS=31
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+#ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -57,7 +57,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-completions frontend-search rails ruby bower brew compleat git-extras httpie vi-mode vundle ember-cli npm nvm web-search vi-like rbenv fasd colorize colored-man-pages extract)
+plugins=(git zsh-completions frontend-search rails ruby bower brew compleat git-extras httpie vundle ember-cli npm nvm web-search rbenv fasd colorize colored-man-pages extract)
 
 # User configuration
 
@@ -115,3 +115,4 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 fpath=(/Users/szines/.brew/share/zsh-completions /Users/szines/.oh-my-zsh/custom/plugins/zsh-completions /Users/szines/.oh-my-zsh/plugins/git /Users/szines/.oh-my-zsh/functions /Users/szines/.oh-my-zsh/completions /usr/local/share/zsh/site-functions /usr/share/zsh/site-functions /usr/share/zsh/5.0.8/functions /Users/szines/.oh-my-zsh/custom/plugins/zsh-completions/src)
+

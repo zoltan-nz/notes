@@ -70,3 +70,10 @@ set splitright
 vmap <silent> u <esc>:Gdiff<cr>gv:diffget<cr><c-w><c-w>ZZ
 
 Plugin 'airblade/vim-gitgutter'
+Plugin 'wincent/command-t'
+
+let g:CommandTInputDebounce = 200
+let g:CommandTFileScanner = "watchman"
+let g:CommandTWildIgnore = &wildignore . ",**/bower_components/*" . ",**/node_modules/*" . ",**/vendor/*"
+let g:CommandTMaxHeight = 30
+let g:CommandTMaxFiles = 500000
