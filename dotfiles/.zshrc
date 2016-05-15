@@ -116,3 +116,5 @@ eval "$(pyenv init -)"
 
 fpath=(/Users/szines/.brew/share/zsh-completions /Users/szines/.oh-my-zsh/custom/plugins/zsh-completions /Users/szines/.oh-my-zsh/plugins/git /Users/szines/.oh-my-zsh/functions /Users/szines/.oh-my-zsh/completions /usr/local/share/zsh/site-functions /usr/share/zsh/site-functions /usr/share/zsh/5.0.8/functions /Users/szines/.oh-my-zsh/custom/plugins/zsh-completions/src)
 
+### Android SDK
+export ANDROID_HOME=/Users/szines/.brew/opt/android-sdk
