@@ -87,10 +87,22 @@ fi
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
+
+## Aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
+alias fs="foreman start"
 
+# On Mac, brew install coreutils
+alias ls="gls --color -ah --group-directories-first --sort=extension"
+alias lsa="gls --color -lah --group-directories-first --sort=extension"
+# On Linux
+# alias ls="ls --color -h --group-directories-first"
+
+# Vim with v
+alias v="f -e vim"
+
+# Initialization for compinit
 autoload -U compinit && compinit
 
 export HOMEBREW_CASK_OPTS="--caskroom=$HOME/.brew/caskroom --binarydir=$HOME/.bin"
