@@ -11,8 +11,8 @@ if has('gui_running')
   set guioptions+=c "Stop opening dialogs
 endif
 
-" Default size
-set lines=40 columns=90
+" Default size - don't really need this, because limit the lines
+" set lines=40 columns=90
 " A colored column
 set colorcolumn=90
 " Show line numbers
@@ -55,6 +55,9 @@ nnoremap <Leader><Leader> :e#<CR>
 
 " Show matching parenthesis
 set showmatch
+
+" xml files will be formatted with xmllint
+au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 
 " Jumping between parenthesis, use %
 " Use [{ for jumping back

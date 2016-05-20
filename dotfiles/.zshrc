@@ -89,9 +89,13 @@ fi
 #
 
 ## Aliases
+alias vi="vim"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias fs="foreman start"
+alias gn="git number --column"
+alias ga="git number add"
+alias vn="git number -c vim"
 
 # On Mac, brew install coreutils
 alias ls="gls --color -ah --group-directories-first --sort=extension"
