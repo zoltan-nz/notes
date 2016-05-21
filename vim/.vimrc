@@ -1,8 +1,18 @@
 " Zoltan's vim config
 
-" Color
-filetype on
-syntax on
+"
+" initialize pathogen
+execute pathogen#infect()
+
+" vim-scriptease - https://github.com/tpope/vim-scriptease
+" vim-sensible - https://github.com/tpope/vim-sensible
+
+" Load plugin files and turn on indentation:
+" Sensible implements
+" filetype plugin indent on
+
+" Color - sensible implements
+" syntax on
 colorscheme Tomorrow-Night
 
 " Guifont
@@ -38,7 +48,7 @@ map <leader>s :source ~/.vimrc<CR>
 
 " Speed up vim
 set hidden
-set history=100
+" set history=100
 
 " Remove white spaces on save
 autocmd BufWritePre * :%s/\s\+$//e
