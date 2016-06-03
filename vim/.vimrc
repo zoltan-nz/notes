@@ -6,6 +6,11 @@ execute pathogen#infect()
 
 " vim-scriptease - https://github.com/tpope/vim-scriptease
 " vim-sensible - https://github.com/tpope/vim-sensible
+" emmet.vim
+runtime bundle/emmet-vim/plugin/emmet.vim
+runtime bundle/vim-scriptease/plugin/scriptease.vim
+runtime bundle/vim-sensible/plugin/sensible.vim
+
 
 " Load plugin files and turn on indentation:
 " Sensible implements
